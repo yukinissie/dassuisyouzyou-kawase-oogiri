@@ -1,3 +1,9 @@
+import { Kawase } from '@/components/Kawase'
+
 export const Main = () => {
-  return <>main</>
+  return (
+    <>
+      <Kawase />
+    </>
+  )
 }
