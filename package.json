@@ -1,0 +1,42 @@
+{
+  "name": "yukinissie-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint:prettier": "prettier --check .",
+    "lintfix:prettier": "prettier --write .",
+    "lint:eslint": "eslint --ext \".js,.ts\" --ignore-path .gitignore .",
+    "lintfix:eslint": "yarn lint:eslint --fix",
+    "lint": "yarn lint:prettier && yarn lint:eslint",
+    "lintfix": "yarn lintfix:prettier && yarn lintfix:eslint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "framer-motion": "^7.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "11.10.0",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "5.33.0",
+    "@typescript-eslint/parser": "5.33.0",
+    "@vitejs/plugin-react": "2.0.0",
+    "eslint": "8.21.0",
+    "eslint-plugin-react": "7.30.1",
+    "prettier": "2.7.1",
+    "typescript": "4.7.4",
+    "vite": "3.0.5"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

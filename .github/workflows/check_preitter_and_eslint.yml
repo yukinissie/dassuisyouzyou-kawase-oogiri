@@ -1,0 +1,26 @@
+name: Check preitter and eslint.
+on: push
+
+jobs:
+  run_eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      - name: Install Dependencies
+        run: |
+          yarn
+
+      - name: Run prettier
+        run: |
+          yarn prettier --check .
+
+      - name: Run eslint
+        run: |
+          yarn eslint --ext '.js,.ts' --ignore-path .gitignore .
