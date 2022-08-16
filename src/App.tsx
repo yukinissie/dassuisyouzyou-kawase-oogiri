@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom'
-import { Sample } from './pages/Sample'
-import { Sample2 } from './pages/Sample2'
+import { Main } from './pages/Main'
 
 // 参考にしたサイト：https://dev.to/aasthapandey/stop-url-from-changing-using-react-router-81n
 
@@ -12,17 +11,15 @@ type State = {
 
 const switchTabs = (getby: string) => {
   switch (getby) {
-    case 'sample2':
-      return <Sample2 />
     default:
-      return <Sample />
+      return <Main />
   }
 }
 
 function App() {
   const { state } = useLocation() as State
   if (state === null) {
-    return <Sample />
+    return <Main />
   }
   return <>{switchTabs(state.getby)}</>
 }
