@@ -13,7 +13,7 @@
     "lintfix": "yarn lintfix:prettier && yarn lintfix:eslint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.2.4",
+    "@chakra-ui/react": "2.3.5",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "framer-motion": "^7.0.0",
